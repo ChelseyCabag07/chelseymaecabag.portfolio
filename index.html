@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio | Chelsey Mae Cabag</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <style>
+    html, body {
+      scroll-behavior: smooth;
+      overflow-x: hidden;
+    }
+
+    /* ABOUT SECTION */
+    #about {
+      background: linear-gradient(135deg, #c62828 0%, #8e0000 100%);
+      color: #fff;
+      min-height: 100vh;
+      padding: 80px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .about-content {
+      max-width: 1200px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 60px;
+      flex-wrap: wrap;
+    }
+
+    .about .profile-container {
+      position: relative;
+      width: 380px;
+      height: 420px;
+    }
+
+    .about .blob {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #facc15;
+      border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+      transition: border-radius 0.3s ease;
+    }
+
+    .about .ellipse-border {
+      position: absolute;
+      top: 15px;
+      left: 15px;
+      width: 350px;
+      height: 390px;
+      overflow: hidden;
+      border: 3px solid gold;
+      border-radius: 50% / 40%;
+      background: white;
+      z-index: 2;
+    }
+
+    .about .ellipse-border img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .about .text-section {
+      max-width: 600px;
+    }
+
+    .about .description {
+      color: rgba(255, 255, 255, 0.9);
+      font-size: 1.1rem;
+      line-height: 1.8;
+      text-align: justify;
+    }
+    .text-section {
+       max-width: 600px;
+      text-align: left;
+    }
+
+    .text-section .cta-button {
+      display: inline-block;
+      margin-top: 20px;
+      margin-left: 0; 
+    }
+
+    .cta-button {
+      display: inline-block;
+      padding: 12px 35px;
+      background: #ffd54f;
+      color: #c62828;
+      font-weight: 600;
+      text-decoration: none;
+      border-radius: 30px;
+      margin-top: 20px;
+      transition: 0.3s ease;
+    }
+
+    .cta-button:hover {
+      background: #ffeb3b;
+      transform: translateY(-3px);
+    }
+
+    .social-links {
+      display: flex;
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .social-links a {
+      width: 45px;
+      height: 45px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(255, 255, 255, 0.15);
+      border-radius: 10px;
+      color: #fff;
+      font-size: 1.3rem;
+      transition: 0.3s ease;
+    }
+
+    .social-links a:hover {
+      transform: translateY(-5px);
+    }
+
+    .social-links a.facebook:hover { background: #3b5998; }
+    .social-links a.linkedin:hover { background: #0077b5; }
+    .social-links a.gmail:hover { background: #ea4335; }
+  </style>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="logo">
+      <div class="circle"></div>
+      <span>CHELSEY</span>
+    </div>
+    <nav>
+      <a href="#home" class="active">Home</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#resume">Resume</a>
+    </nav>
+    <a href="contact.html" class="contact-btn">Contact Me</a>
+  </header>
+
+  <!-- HOME SECTION (use your existing style.css design) -->
+  <section id="home" class="hero">
+    <div class="hero-text">
+      <p class="hello">Hello!</p>
+      <h1>I’m <span class="name">Chelsey Mae Cabag,</span><br/>a Full-Stack Developer.</h1>
+      <p class="description">
+        I am a passionate Full-Stack Developer specializing in creating responsive, user-friendly websites and web applications. 
+        With a strong foundation in HTML, CSS, JavaScript, and modern frameworks.
+      </p>
+      <div class="buttons">
+        <a href="contact.html" class="btn primary">Get in Touch</a>
+      </div>
+      <div class="social-icons">
+        <a href="https://facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://linkedin.com/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+         <a href="mailto:chelsey@example.com"><i class="fas fa-envelope"></i></a>
+</div>
+    </div>
+
+    <div class="hero-image">
+      <div class="image-container">
+        <div class="blob"></div>
+        <div class="ellipse-border">
+          <img src="formalpic.png" alt="Chelsey Mae Cabag" />
+        </div>
+      </div>
+    </div>
+  </section>
+ <!-- ABOUT SECTION -->
+   <section id="about" class="about-section">
+    <div class="about-container">
+      <h1 class="about-title">Skills & Expertise</h1>
+
+      <div class="skills-grid">
+        <div class="skill-box">
+          <i class="fa-solid fa-code skill-icon"></i>
+          <h3>Languages</h3>
+          <p>C, Java, HTML, CSS, JavaScript, PHP</p>
+        </div>
+        <div class="skill-box">
+          <i class="fa-solid fa-layer-group skill-icon"></i>
+          <h3>Frameworks & Libraries</h3>
+          <p>React, Node.js, Express</p>
+        </div>
+        <div class="skill-box">
+          <i class="fa-solid fa-database skill-icon"></i>
+          <h3>Databases</h3>
+          <p>MySQL, Firebase</p>
+        </div>
+        <div class="skill-box">
+          <i class="fa-solid fa-tools skill-icon"></i>
+          <h3>Tools</h3>
+          <p>Git, VS Code, Figma, Adobe Photoshop</p>
+        </div>
+      </div>
+
+      <p class="about-description">
+        I enjoy working with modern web technologies, building dynamic interfaces, 
+        and solving real-world problems through clean and scalable code. Whether it’s designing 
+        engaging user interfaces or developing powerful backend systems, I aim to deliver 
+        solutions that combine creativity with functionality.
+      </p>
+    </div>
+  </section>
+  <!-- SERVICES SECTION -->
+<!-- SERVICES SECTION -->
+<section id="services" class="services-section">
+  <div class="bg-shapes">
+    <div class="shape"></div>
+    <div class="shape"></div>
+    <div class="shape"></div>
+  </div>
+
+  <div class="container">
+    <h1>My Services</h1>
+
+    <div class="services-wrapper">
+      <div class="service-tag tag-frontend">
+        <span class="dot dot-blue"></span>
+        <span>Front-end</span>
+      </div>
+
+      <div class="service-tag tag-backend">
+        <span class="dot dot-black"></span>
+        <span>Back-end</span>
+      </div>
+
+      <div class="service-tag tag-graphics">
+        <span class="dot dot-gold"></span>
+        <span>Graphics Design</span>
+      </div>
+
+      <div class="service-tag tag-uiux">
+        <span class="dot dot-pink"></span>
+        <span>UI/UX Design</span>
+      </div>
+
+      <div class="center-text">
+        I build complete, responsive, and high-performing websites from start to finish.
+      </div>
+    </div>
+  </div>
+</section>
+
+</body>
+</html>
+    
