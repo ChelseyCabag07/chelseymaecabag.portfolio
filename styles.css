@@ -1,0 +1,131 @@
+/* Background */
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("background.jpg") no-repeat center center/cover;
+  font-family: Arial, sans-serif;
+}
+
+/* Glassmorphism container */
+.form-container {
+  background: rgba(255, 255, 255, 0.126);
+  backdrop-filter: blur(12px);
+  border-radius: 15px;
+  padding: 40px;
+  width: 350px;
+  text-align: center;
+  color: #fff;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* Headings */
+.form-container h2 {
+  margin-bottom: 20px;
+  font-size: 26px;
+}
+
+/* Labels (Email, Password, etc.) */
+form label {
+  display: block;
+  text-align: left;    /* Align labels left */
+  margin-bottom: 5px;
+  font-size: 14px;
+  color: #ffffff;      /* White text */
+  font-weight: 500;
+}
+
+/* Inputs */
+form input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0 10px 0;
+  border: 2px solid #fff;    /* White border */
+  border-radius: 8px;
+  background: transparent;   /* Transparent background */
+  outline: none;
+  font-size: 14px;
+  color: #fff;               /* White text inside */
+}
+
+form input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* Forgot password link under password input, aligned right */
+.forgot-password {
+  display: block;
+  text-align: right;
+  margin: 5px 0 15px 0;
+  font-size: 13px;
+}
+
+.forgot-password a {
+  color: #ffffff !important;
+  text-decoration: none !important;
+}
+
+.forgot-password a:hover {
+  text-decoration: underline !important;
+}
+
+.sign-up a {
+  color: #ffffff !important;
+  text-decoration: none !important;
+}
+
+/* Button */
+.btn {
+  width: 100%;
+  padding: 12px;
+  margin-top: 15px;
+  border: none;
+  border-radius: 8px;
+  background: #000f62; 
+  color: #ffffff;      
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #6ab7ef;  
+}
+
+/* Alternative text (login/register switch, centered below button) */
+.alt {
+  margin-top: 15px;
+  font-size: 14px;
+  text-align: center;    /* Ensure centered */
+}
+
+.alt a {
+  font-weight: bold;
+  color: #ffffff !important;
+  text-decoration: none;
+}
+
+.alt a:hover {
+  text-decoration: underline;
+}
+
+/* Social login icons */
+.social-login {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.social-login img {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.social-login img:hover {
+  transform: scale(1.1);
+}

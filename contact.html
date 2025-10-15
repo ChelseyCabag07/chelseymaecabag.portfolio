@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Chelsey</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      font-family: "Segoe UI", sans-serif;
+      margin: 0;
+      background: #fff;
+      color: #000;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: #8b0000;
+      padding: 15px 40px;
+      flex-wrap: wrap;
+      width: 90%;
+      margin: 20px auto;
+      border-radius: 50px / 50%;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .logo .circle {
+      width: 20px;
+      height: 20px;
+      background: gold;
+      border-radius: 50%;
+    }
+
+    .logo span {
+      font-weight: bold;
+      color: white;
+      font-size: 18px;
+    }
+
+    nav {
+      display: flex;
+      gap: 25px;
+      align-items: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      color: #ffcccc;
+    }
+
+    .contact-btn {
+      background: white;
+      color: #8b0000;
+      padding: 8px 18px;
+      border-radius: 25px;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .contact-page {
+      padding: 80px 40px;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .contact-page h2 {
+      font-size: 36px;
+      margin-bottom: 20px;
+      color: #8b0000;
+      text-align: center;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    input, textarea {
+      padding: 12px 16px;
+      font-size: 16px;
+      border: 2px solid #ccc;
+      border-radius: 8px;
+      font-family: "Segoe UI", sans-serif;
+    }
+
+    textarea {
+      resize: vertical;
+      min-height: 120px;
+    }
+
+    button {
+      padding: 12px;
+      font-size: 16px;
+      background-color: #8b0000;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #a00000;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">
+      <div class="circle"></div>
+      <span>Chelsey</span>
+    </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#resume">Resume</a>
+    </nav>
+  </header>
+
+  <div class="contact-page">
+    <h2>Contact Me</h2>
+    <form action="#" method="post">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,99 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+
+  /* 👇 Background image */
+  background: url("bg.jpg") no-repeat center center fixed;
+  background-size: cover;
+
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  overflow: hidden;
+  max-width: 900px;
+  width: 100%;
+}
+
+/* Left Side: Illustration */
+.image-container {
+  flex: 1;
+  background: #f0f6ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+.image-container img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Right Side: Registration Form */
+.form-container {
+  flex: 1;
+  padding: 30px;
+}
+.form-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 25px;
+  border: 1px solid #ccc;
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+.btn {
+  width: 100%;
+  padding: 12px;
+  background: #4a90e2;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.btn:hover {
+  background: #357ABD;
+}
+
+/* Social login */
+.alt-signup {
+  text-align: center;
+  margin: 15px 0;
+  font-size: 14px;
+  color: #666;
+}
+.social-login {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+.social-login img {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+.social-login img:hover {
+  transform: scale(1.1);
+}
+
+.login {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 14px;
+}
