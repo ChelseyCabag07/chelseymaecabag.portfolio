@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Color Palette Explorer</title>
+    <title>Color Palette</title>
     <style>
         * {
             margin: 0;
@@ -13,7 +13,7 @@
 
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #e5e6ec 0%, #f7f7f7 100%);
+            background: url(paper.jpg) no-repeat center center/cover;
             min-height: 100vh;
             display: flex;
             justify-content: center;
@@ -22,17 +22,18 @@
         }
 
         .container {
-            background: white;
+            background: rgba(240, 230, 230, 0.129);
+            border: #060000;
             border-radius: 20px;
             padding: 40px;
-            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 20px 60px rgba(20, 7, 7, 0.541);
             max-width: 500px;
             width: 100%;
         }
 
         h1 {
             text-align: center;
-            color: #333;
+            color: #090000;
             margin-bottom: 30px;
             font-size: 28px;
         }
@@ -67,47 +68,74 @@
             border: none;
             border-radius: 10px;
             cursor: pointer;
-            transition: all 0.3s ease;
+            transition: background-position 0.45s ease, transform 0.25s ease, box-shadow 0.25s ease, color 0.2s ease, opacity 0.2s ease;
             color: white;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            background-size: 200% 100%;
+            background-position: left center;
         }
 
         button:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+            transform: translateY(-4px);
+            box-shadow: 0 8px 18px rgba(0, 0, 0, 0.18);
+            background-position: right center;
         }
 
         button:active {
             transform: translateY(0);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
         }
 
         .btn-blue {
-            background: linear-gradient(135deg, #3498db, #2980b9);
+            background-image: linear-gradient(135deg, #3498db, #2980b9);
         }
 
         .btn-green {
-            background: linear-gradient(135deg, #2ecc71, #27ae60);
+            background-image: linear-gradient(135deg, #2ecc71, #27ae60);
         }
 
         .btn-orange {
-            background: linear-gradient(135deg, #e67e22, #d35400);
+            background-image: linear-gradient(135deg, #e67e22, #d35400);
         }
 
         .btn-purple {
-            background: linear-gradient(135deg, #9b59b6, #8e44ad);
+            background-image: linear-gradient(135deg, #9b59b6, #8e44ad);
         }
 
         .btn-random {
             grid-column: 1 / -1;
-            background: linear-gradient(135deg, #ff6b6b, #ee5a6f);
+            background-image: linear-gradient(135deg, #ff6b6b, #ee5a6f);
             font-size: 18px;
+        }
+
+        .btn.back {
+            display: block;
+            margin: 20px auto 10px;
+            padding: 10px 20px;
+            background-image: linear-gradient(135deg, #9c9c9c, #7f7f7f);
+            color: #f5f5f5;
+            text-decoration: none;
+            font-size: 18px;
+            border-radius: 8px;
+            transition: background-position 0.45s ease, transform 0.25s ease, box-shadow 0.25s ease;
+            text-align: center;
+            width: fit-content;
+            background-size: 200% 100%;
+            background-position: left center;
+        }
+
+        .btn.back:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 18px rgba(0,0,0,0.18);
+            background-position: right center;
         }
 
         .color-code {
             text-align: center;
+            font-weight: bold;
             margin-top: 20px;
-            font-size: 14px;
-            color: #666;
+            font-size: 16px;
+            color: #060000;
             font-family: 'Courier New', monospace;
         }
     </style>
@@ -127,6 +155,8 @@
             <button class="btn-purple" onclick="changeColor('#9b59b6')">Royal Purple</button>
             <button class="btn-random" onclick="randomColor()">✨ Random Color</button>
         </div>
+
+        <a href="index.html" class="btn back">Back</a>
 
         <div class="color-code" id="colorCode">
             Click a button to change the color!
@@ -156,5 +186,4 @@
         }
     </script>
 </body>
-
 </html>
