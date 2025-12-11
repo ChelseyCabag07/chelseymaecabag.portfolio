@@ -6,10 +6,11 @@
   <title>Portfolio | Chelsey Mae Cabag</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
 </head>
+
 <body>
 
+  <!-- HEADER -->
   <header>
     <div class="logo">
       <div class="circle"></div>
@@ -19,29 +20,28 @@
       <a href="#home" class="active">Home</a>
       <a href="#about">About</a>
       <a href="#services">Services</a>
-      <a href="#projects">Projects</a>
       <a href="#resume">Resume</a>
     </nav>
     <a href="contact.html" class="contact-btn">Contact Me</a>
   </header>
 
+  <!-- HOME SECTION -->
   <section id="home" class="hero">
     <div class="hero-text">
       <p class="hello">Hello!</p>
-      <h1>I’m <span class="name">Chelsey Mae Cabag,</span><br/>a Full-Stack Developer.</h1>
+      <h1>I'm <span class="name">Chelsey Mae Cabag,</span><br/>a Full-Stack Developer.</h1>
       <p class="description">
         I am a passionate Full-Stack Developer specializing in creating responsive, user-friendly websites and web applications. 
         With a strong foundation in HTML, CSS, JavaScript, and modern frameworks.
       </p>
       <div class="buttons">
         <a href="contact.html" class="btn primary">Get in Touch</a>
-        <a href="bgcolorchanger.html" class="btn secondary">Color Palette</a>
       </div>
       <div class="social-icons">
         <a href="https://facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
         <a href="https://linkedin.com/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-         <a href="mailto:cabagchelsey@gmail.com"><i class="fas fa-envelope"></i></a>
-</div>
+        <a href="mailto:chelsey@example.com"><i class="fas fa-envelope"></i></a>
+      </div>
     </div>
 
     <div class="hero-image">
@@ -54,8 +54,8 @@
     </div>
   </section>
 
- <!-- ABOUT SECTION -->
-   <section id="about" class="about-section">
+  <!-- ABOUT SECTION -->
+  <section id="about" class="about-section">
     <div class="about-container">
       <h1 class="about-title">Skills & Expertise</h1>
 
@@ -84,53 +84,211 @@
 
       <p class="about-description">
         I enjoy working with modern web technologies, building dynamic interfaces, 
-        and solving real-world problems through clean and scalable code. Whether it’s designing 
+        and solving real-world problems through clean and scalable code. Whether it's designing 
         engaging user interfaces or developing powerful backend systems, I aim to deliver 
         solutions that combine creativity with functionality.
       </p>
     </div>
   </section>
-<!-- SERVICES SECTION -->
-<section id="services" class="services-section">
-   <div class="grid-bg"></div>
-    
-    <div class="container">
-        <div class="header">
-            <h1>Services</h1>
-            <p>I build complete, responsive, and high-performing websites from start to finish.</p>
-        </div>
 
-        <div class="services-grid">
-            <div class="service-card">
-                <div class="icon">💻</div>
-                <h3>Front-End Development</h3>
-                <p>Crafting beautiful, interactive user interfaces with modern technologies. From pixel-perfect designs to smooth animations, I bring your vision to life in the browser.</p>
-            </div>
-
-            <div class="service-card">
-                <div class="icon">⚙️</div>
-                <h3>Back-End Development</h3>
-                <p>Building robust server-side solutions and APIs that power your applications. Secure, scalable, and efficient backend systems tailored to your needs.</p>
-            </div>
-
-            <div class="service-card">
-                <div class="icon">🎨</div>
-                <h3>Graphics Design</h3>
-                <p>Creating stunning visual identities and graphics that capture attention. From logos to complete brand packages, I deliver designs that make an impact.</p>
-            </div>
-
-            <div class="service-card">
-                <div class="icon">📱</div>
-                <h3>UI/UX Design</h3>
-                <p>Designing intuitive and engaging user experiences that delight users. Every interface is crafted with user behavior and accessibility in mind.</p>
-            </div>
-        </div>
+  <!-- SERVICES SECTION -->
+  <section id="services" class="services-section">
+    <div class="bg-shapes">
+      <div class="shape"></div>
+      <div class="shape"></div>
+      <div class="shape"></div>
     </div>
-    <section>
-      <!-- PROJECTS SECTION -->
-    <section id="projects" class="projects-section">
-      <div class="container">
-      
-    </section>
+
+    <div class="container">
+      <h1>My Services</h1>
+
+      <div class="services-wrapper">
+        <div class="service-tag tag-frontend">
+          <span class="dot dot-blue"></span>
+          <span>Front-end</span>
+        </div>
+
+        <div class="service-tag tag-backend">
+          <span class="dot dot-black"></span>
+          <span>Back-end</span>
+        </div>
+
+        <div class="service-tag tag-graphics">
+          <span class="dot dot-gold"></span>
+          <span>Graphics Design</span>
+        </div>
+
+        <div class="service-tag tag-uiux">
+          <span class="dot dot-pink"></span>
+          <span>UI/UX Design</span>
+        </div>
+
+        <div class="center-text">
+          I build complete, responsive, and high-performing websites from start to finish.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESUME SECTION -->
+  <section id="resume" class="resume-section">
+    <div class="resume-container">
+      <div class="resume-header-section">
+        <h1>My Resume</h1>
+        <p>Download or view my professional resume</p>
+      </div>
+
+      <div class="download-section">
+        <h3>Download Resume</h3>
+        <a href="#" class="download-btn" id="downloadBtn">
+          <i class="fas fa-file-pdf"></i>
+          Download as PDF
+        </a>
+      </div>
+
+      <div class="resume-preview" id="resumeContent">
+        <div class="resume-content">
+          <div class="resume-header">
+            <h2>CHELSEY MAE CABAG</h2>
+            <div class="title">Full-Stack Developer</div>
+            <div class="contact-info">
+              <span><i class="fas fa-envelope"></i> cabagchelsey@gmail.com</span>
+              <span><i class="fas fa-phone"></i> +63 123 456 7890</span>
+              <span><i class="fas fa-map-marker-alt"></i> Cebu City, Philippines</span>
+              <span><i class="fab fa-linkedin"></i> linkedin.com/in/chelseycabag</span>
+            </div>
+          </div>
+
+          <div class="section">
+            <h3 class="section-title">
+              <i class="fas fa-user"></i>
+              Professional Summary
+            </h3>
+            <div class="section-content">
+              <p>
+                Passionate Full-Stack Developer with expertise in building responsive, user-friendly web applications. 
+                Proficient in modern web technologies including HTML, CSS, JavaScript, React, Node.js, and databases. 
+                Strong problem-solving skills with a focus on delivering clean, scalable, and efficient code solutions.
+              </p>
+            </div>
+          </div>
+
+          <div class="section">
+            <h3 class="section-title">
+              <i class="fas fa-briefcase"></i>
+              Work Experience
+            </h3>
+            <div class="section-content">
+              <div class="experience-item">
+                <div class="item-header">
+                  <div>
+                    <div class="item-title">Full-Stack Developer</div>
+                    <div class="item-company">Tech Solutions Inc.</div>
+                  </div>
+                  <div class="item-date">Jan 2023 - Present</div>
+                </div>
+                <ul class="item-description">
+                  <li>Developed and maintained responsive web applications using React and Node.js</li>
+                  <li>Implemented RESTful APIs and integrated third-party services</li>
+                  <li>Collaborated with cross-functional teams to deliver projects on time</li>
+                  <li>Optimized application performance resulting in 40% faster load times</li>
+                </ul>
+              </div>
+
+              <div class="experience-item">
+                <div class="item-header">
+                  <div>
+                    <div class="item-title">Frontend Developer</div>
+                    <div class="item-company">Creative Digital Agency</div>
+                  </div>
+                  <div class="item-date">Jun 2021 - Dec 2022</div>
+                </div>
+                <ul class="item-description">
+                  <li>Created pixel-perfect, responsive user interfaces from design mockups</li>
+                  <li>Implemented interactive features using JavaScript and modern frameworks</li>
+                  <li>Worked closely with designers to ensure seamless user experiences</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="section">
+            <h3 class="section-title">
+              <i class="fas fa-graduation-cap"></i>
+              Education
+            </h3>
+            <div class="section-content">
+              <div class="education-item">
+                <div class="item-header">
+                  <div>
+                    <div class="item-title">Bachelor of Science in Information Technology</div>
+                    <div class="item-company">Cebu Technological University</div>
+                  </div>
+                  <div class="item-date">2017 - 2021</div>
+                </div>
+                <p style="margin-left: 20px; color: #666;">
+                  Graduated with honors. Relevant coursework: Data Structures, Web Development, 
+                  Database Systems, Software Engineering.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="section">
+            <h3 class="section-title">
+              <i class="fas fa-code"></i>
+              Technical Skills
+            </h3>
+            <div class="section-content">
+              <div class="skills-grid">
+                <div class="skill-category">
+                  <h4>Languages</h4>
+                  <p>C, Java, HTML, CSS, JavaScript, PHP</p>
+                </div>
+                <div class="skill-category">
+                  <h4>Frameworks & Libraries</h4>
+                  <p>React, Node.js, Express</p>
+                </div>
+                <div class="skill-category">
+                  <h4>Databases</h4>
+                  <p>MySQL, Firebase</p>
+                </div>
+                <div class="skill-category">
+                  <h4>Tools & Technologies</h4>
+                  <p>Git, VS Code, Figma, Adobe Photoshop</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="section">
+            <h3 class="section-title">
+              <i class="fas fa-project-diagram"></i>
+              Key Projects
+            </h3>
+            <div class="section-content">
+              <div class="experience-item">
+                <div class="item-title">E-Commerce Platform</div>
+                <ul class="item-description">
+                  <li>Built a full-featured online shopping platform with user authentication, product catalog, and payment integration</li>
+                  <li>Technologies: React, Node.js, Express, MySQL</li>
+                </ul>
+              </div>
+              <div class="experience-item">
+                <div class="item-title">Task Management Application</div>
+                <ul class="item-description">
+                  <li>Developed a collaborative task management tool with real-time updates</li>
+                  <li>Technologies: React, Firebase, CSS Grid/Flexbox</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
